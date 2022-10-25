@@ -97,13 +97,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  double raw = 0.1;
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_ADC_Start(&hadc1);
-	  HAL_ADC_PollForConversion(&hadc1,100);
-	  raw = (double) HAL_ADC_GetValue(&hadc1);
 
     /* USER CODE BEGIN 3 */
   }
